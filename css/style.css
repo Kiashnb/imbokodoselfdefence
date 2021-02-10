@@ -187,6 +187,18 @@ h4{
     padding: 60px 0 20px ;
 }
 
+.footer-fixed {
+    background: black;
+    /* kb  */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    padding: 60px 0 20px ;
+}
+
 .footer p{
     color: white;
 }
