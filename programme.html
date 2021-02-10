@@ -1,0 +1,108 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imbokodo Self Defence</title>
+<link rel="stylesheet" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <!-- header  -->
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo/logo.jpg" alt="logo" width="125px"></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="#aim">Aim</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="funding.html">Funding</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="img/menu.png" class="menu-icon" onclick="menuToggle()">
+      </div>
+    </div>
+  </div>
+
+  	<!-- Programme -->
+	<div class="small-container" id="programme">
+		<h2 class="title">Programme</h2>
+		<p>These sessions are taught by highly skilled, approachable trainers who create a respectful and safe environment
+			for the girls to deal with the realities of their need to be able to defend themselves. To ensure a well- balanced
+			interactive session, the number of trainers will be dependent on the number of students in a class.
+			Although this programme has been designed for teenage girls, it can be adapted to include boys. It can also be
+			adapted for adults if required. </p>
+		<br>
+		<p>The programme will include:</p>
+
+		<ul id="points">
+			<li>Basic Strikes (how to hold a fist and where to attack on the human body)</li>
+			<li>Defence against an attempted choke hold</li>
+			<li>Defence against a hair grab</li>
+			<li>A hold against hostiles if they throw a punch</li>
+			<li>How to manoeuvre if ever you find yourself on your back (either use the triangle hold or an arm bar)</li>
+		</ul>
+    <br>
+	</div>
+
+
+  <!-- footer  -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="footer-col-1">
+					<h3>Download our app</h3>
+					<p>Download our Android or IOS app</p>
+					<div class="app-logo">
+						<img src="img/google.png" class="">
+						<img src="img/apple.png" class="">
+					</div>
+				</div> -->
+        <div class="footer-col-2">
+          <img src="img/logo/logo.jpg" alt="">
+          <p>Reg: 2020/802836/07</p>
+        </div>
+        <!-- <div class="footer-col-3">
+					<h3>Usefull links</h3>
+					<ul>
+						<li>Returns</li>
+						<a href="terms-condidtions.html">
+							<li>Policies</li>
+						</a>
+						<a href="about.html">
+							<li>About</li>
+						</a>
+					</ul>
+				</div> -->
+        <!-- <div class="footer-col-4">
+					<h3>Follow Us At</h3>
+					<ul>
+						<a href="http://www.facebook.com/">
+							<li><i class="fa fa-facebook"></i> Facebook</li>
+						</a>
+						<a href="http://www.instagram.com/">
+							<li><i class="fa fa-instagram"></i> Instagram</li>
+						</a>
+					</ul>
+				</div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- js for menu  -->
+  <script>
+    var menuItems = document.getElementById("MenuItems");
+    menuItems.style.maxHeight = "0px";
+    function menuToggle() {
+      if (menuItems.style.maxHeight == "0px") {
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>

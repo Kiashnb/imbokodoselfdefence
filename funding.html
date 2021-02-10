@@ -1,0 +1,101 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imbokodo Self Defence</title>
+<link rel="stylesheet" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <!-- header  -->
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo/logo.jpg" alt="logo" width="125px"></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="#aim">Aim</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="funding.html">Programme</a></li>
+            <li><a href="funding.html">Funding</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="img/menu.png" class="menu-icon" onclick="menuToggle()">
+      </div>
+    </div>
+  </div>
+
+  <!-- Funding -->
+
+  <div class="small-container" id="funding">
+    <h2 class="title">Funding</h2>
+    <p>This being a nonprofit organisation, all proceeds received from classes are used to host the same classes in
+      disadvantaged areas. Any donations are also welcomed to help us achieve our goal. <br><br>
+      Our banking details are: <br>
+      <b>Bank: </b> Rand Merchant Bank <br>
+      <b>Account Name: </b> Imbokodo Self Defence NPC <br>
+      <b>Account Number: </b> 62876436059 <br>
+      <b>Branch Code: </b> 261251
+    </p>
+    <br>
+  </div>
+
+  <!-- footer  -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="footer-col-1">
+					<h3>Download our app</h3>
+					<p>Download our Android or IOS app</p>
+					<div class="app-logo">
+						<img src="img/google.png" class="">
+						<img src="img/apple.png" class="">
+					</div>
+				</div> -->
+        <div class="footer-col-2">
+          <img src="img/logo/logo.jpg" alt="">
+          <p>Reg: 2020/802836/07</p>
+        </div>
+        <!-- <div class="footer-col-3">
+					<h3>Usefull links</h3>
+					<ul>
+						<li>Returns</li>
+						<a href="terms-condidtions.html">
+							<li>Policies</li>
+						</a>
+						<a href="about.html">
+							<li>About</li>
+						</a>
+					</ul>
+				</div> -->
+        <!-- <div class="footer-col-4">
+					<h3>Follow Us At</h3>
+					<ul>
+						<a href="http://www.facebook.com/">
+							<li><i class="fa fa-facebook"></i> Facebook</li>
+						</a>
+						<a href="http://www.instagram.com/">
+							<li><i class="fa fa-instagram"></i> Instagram</li>
+						</a>
+					</ul>
+				</div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- js for menu  -->
+  <script>
+    var menuItems = document.getElementById("MenuItems");
+    menuItems.style.maxHeight = "0px";
+    function menuToggle() {
+      if (menuItems.style.maxHeight == "0px") {
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
