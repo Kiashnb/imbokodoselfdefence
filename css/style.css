@@ -285,7 +285,7 @@ ul{
         background: #333;
         width: 100%;
         overflow: hidden;
-        transition: max-height 0.5s;
+        transition: max-height 0.3s;
     }
 
     nav ul li{
@@ -303,6 +303,8 @@ ul{
         display: block;
         cursor: pointer;
     }
+
+
 }
 
 
@@ -329,8 +331,5 @@ ul{
         line-height: 32px;
     }
 
-    .cart-info p{
-        display: none;
-    }
 }
 

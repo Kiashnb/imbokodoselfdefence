@@ -21,21 +21,19 @@
 				</div>
 				<nav>
 					<ul id="MenuItems">
-						<li><a href="#aim">Aim</a></li>
-						<li><a href="#concept">Concept</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="programme.html">Programme</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="funding.html">Funding</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
-				<!-- <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a> -->
 				<img src="img/menu.png" class="menu-icon" onclick="menuToggle()">
 			</div>
 			<div class="row">
 				<div class="col-2">
 					<h1>IMBOKODO<br>SELF DEFENCE</h1>
 					<p>Confidently Empowering our Youth</p>
-					<!-- <a href="" class="btn">Explore Now &#8594;</a> -->
 				</div>
 				<div class="col-2">
 					<img src="img/img1.png" width="500">
@@ -47,7 +45,7 @@
 
 	<!-- Aim -->
 	<div class="small-container" id="aim">
-		<h2 class="title">Our Aim</h2>
+		<h2 class="title" id="tittleHide">Our Aim</h2>
 		<p>To support and stand against violence towards women and children, Danika and Diara have created a self-sustaining
 			initiative called “Imbokodo Self Defence”. The aim of Imbokodo Self Defence NPC is to empower as many teenagers as
 			possible and introduce them to basic self-defence so that they can escape a situation that makes them feel
@@ -70,27 +68,7 @@
 		</p>
 	</div>
 
-	<!-- Gallery -->
-	<div class="small-container">
-		<h2 class="title">Gallery</h2>
-		<div class="row">
-			<div class="col-4">
-				<img src="img/img1.png" alt="">
-			</div>
-			<div class="col-4">
-				<img src="img/img2.png" alt="">
-			</div>
-			<div class="col-4">
-				<img src="img/img3.png" alt="">
-			</div>
-			<div class="col-4">
-				<img src="img/img4.png" alt="">
-			</div>
-		</div>
-	</div>
-
-
-
+	<br><br>
 	<!-- footer  -->
 	<div class="footer">
 		<div class="container">
@@ -140,9 +118,11 @@
 		menuItems.style.maxHeight = "0px";
 		function menuToggle() {
 			if (menuItems.style.maxHeight == "0px") {
+				document.getElementById("tittleHide").style.display = "none";
 				menuItems.style.maxHeight = "200px";
 			} else {
 				menuItems.style.maxHeight = "0px";
+				document.getElementById("tittleHide").style.display = "";
 			}
 		}
 	</script>

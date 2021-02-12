@@ -15,11 +15,11 @@
         </div>
         <nav>
           <ul id="MenuItems">
-            <li><a href="#aim">Aim</a></li>
-            <li><a href="#concept">Concept</a></li>
-            <li><a href="programme.html">Programme</a></li>
-            <li><a href="funding.html">Funding</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+						<li><a href="programme.html">Programme</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="funding.html">Funding</a></li>
+						<li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <img src="img/menu.png" class="menu-icon" onclick="menuToggle()">
@@ -27,9 +27,10 @@
     </div>
   </div>
 
+
   <!-- Contact -->
   <div class="small-container" id="contact">
-    <h2 class="title">Contact Us</h2>
+    <h2 class="title" id="tittleHide">Contact Us</h2>
     <p>All correspondence can be addressed to: </p> <br>
 
     <p><b>Rooshanee</b></p>
@@ -47,8 +48,10 @@
     <br>
   </div>
 
+  <br><br><br><br><br><br><br>
+
   <!-- footer  -->
-  <div class="footer-fixed">
+  <div class="footer">
     <div class="container">
       <div class="row">
         <!-- <div class="footer-col-1">
@@ -92,15 +95,17 @@
 
 
   <!-- js for menu  -->
-  <script>
-    var menuItems = document.getElementById("MenuItems");
-    menuItems.style.maxHeight = "0px";
-    function menuToggle() {
-      if (menuItems.style.maxHeight == "0px") {
-        menuItems.style.maxHeight = "200px";
-      } else {
-        menuItems.style.maxHeight = "0px";
-      }
-    }
-  </script>
+	<script>
+		var menuItems = document.getElementById("MenuItems");
+		menuItems.style.maxHeight = "0px";
+		function menuToggle() {
+			if (menuItems.style.maxHeight == "0px") {
+				document.getElementById("tittleHide").style.display = "none";
+				menuItems.style.maxHeight = "200px";
+			} else {
+				menuItems.style.maxHeight = "0px";
+				document.getElementById("tittleHide").style.display = "";
+			}
+		}
+	</script>
 </body>

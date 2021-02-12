@@ -27,24 +27,26 @@
     </div>
   </div>
 
-  <!-- Funding -->
+	<!-- Gallery -->
+	<div class="small-container">
+		<h2 class="title" id="tittleHide">Gallery</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="img/img1.png" alt="">
+			</div>
+			<div class="col-4">
+				<img src="img/img2.png" alt="">
+			</div>
+			<div class="col-4">
+				<img src="img/img3.png" alt="">
+			</div>
+			<div class="col-4">
+				<img src="img/img4.png" alt="">
+			</div>
+		</div>
+	</div>
 
-  <div class="small-container" id="funding">
-    <h2 class="title" id="tittleHide">Funding</h2>
-    <p>This being a nonprofit organisation, all proceeds received from classes are used to host the same classes in
-      disadvantaged areas. Any donations are also welcomed to help us achieve our goal. <br><br>
-      Our banking details are: 
-      <br><br>
-      <b>Bank: </b> Rand Merchant Bank <br>
-      <b>Account Name: </b> Imbokodo Self Defence NPC <br>
-      <b>Account Number: </b> 62876436059 <br>
-      <b>Branch Code: </b> 261251
-    </p>
-    <br>
-  </div>
-
-  <br><br><br><br><br><br><br><br><br><br><br>
-
+  <br><br><br><br><br><br><br><br><br><br><br><br>
   <!-- footer  -->
   <div class="footer">
     <div class="container">
@@ -89,18 +91,18 @@
   </div>
 
 
-<!-- js for menu  -->
-<script>
-  var menuItems = document.getElementById("MenuItems");
-  menuItems.style.maxHeight = "0px";
-  function menuToggle() {
-    if (menuItems.style.maxHeight == "0px") {
-      document.getElementById("tittleHide").style.display = "none";
-      menuItems.style.maxHeight = "200px";
-    } else {
-      menuItems.style.maxHeight = "0px";
-      document.getElementById("tittleHide").style.display = "";
-    }
-  }
-</script>
+	<!-- js for menu  -->
+	<script>
+		var menuItems = document.getElementById("MenuItems");
+		menuItems.style.maxHeight = "0px";
+		function menuToggle() {
+			if (menuItems.style.maxHeight == "0px") {
+				document.getElementById("tittleHide").style.display = "none";
+				menuItems.style.maxHeight = "200px";
+			} else {
+				menuItems.style.maxHeight = "0px";
+				document.getElementById("tittleHide").style.display = "";
+			}
+		}
+	</script>
 </body>

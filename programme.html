@@ -15,11 +15,11 @@
         </div>
         <nav>
           <ul id="MenuItems">
-            <li><a href="#aim">Aim</a></li>
-            <li><a href="#concept">Concept</a></li>
-            <li><a href="programme.html">Programme</a></li>
-            <li><a href="funding.html">Funding</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+						<li><a href="programme.html">Programme</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="funding.html">Funding</a></li>
+						<li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <img src="img/menu.png" class="menu-icon" onclick="menuToggle()">
@@ -27,9 +27,10 @@
     </div>
   </div>
 
+
   	<!-- Programme -->
 	<div class="small-container" id="programme">
-		<h2 class="title">Programme</h2>
+		<h2 class="title" id="tittleHide">Programme</h2>
 		<p>These sessions are taught by highly skilled, approachable trainers who create a respectful and safe environment
 			for the girls to deal with the realities of their need to be able to defend themselves. To ensure a well- balanced
 			interactive session, the number of trainers will be dependent on the number of students in a class.
@@ -37,21 +38,22 @@
 			adapted for adults if required. </p>
 		<br>
 		<p>The programme will include:</p>
+    <br>
 
 		<ul id="points">
-			<li>Basic Strikes (how to hold a fist and where to attack on the human body)</li>
-			<li>Defence against an attempted choke hold</li>
-			<li>Defence against a hair grab</li>
-			<li>A hold against hostiles if they throw a punch</li>
-			<li>How to manoeuvre if ever you find yourself on your back (either use the triangle hold or an arm bar)</li>
+			<li>1 Basic Strikes (how to hold a fist and where to attack on the human body)</li>
+			<li>2 Defence against an attempted choke hold</li>
+			<li>3 Defence against a hair grab</li>
+			<li>4 A hold against hostiles if they throw a punch</li>
+			<li>5 How to manoeuvre if ever you find yourself on your back (either use the triangle hold or an arm bar)</li>
 		</ul>
     <br>
 	</div>
-  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
 
 
   <!-- footer  -->
-  <div class="footer-fixed">
+  <div class="footer">
     <div class="container">
       <div class="row">
         <!-- <div class="footer-col-1">
@@ -93,17 +95,18 @@
     </div>
   </div>
 
-
-  <!-- js for menu  -->
-  <script>
-    var menuItems = document.getElementById("MenuItems");
-    menuItems.style.maxHeight = "0px";
-    function menuToggle() {
-      if (menuItems.style.maxHeight == "0px") {
-        menuItems.style.maxHeight = "200px";
-      } else {
-        menuItems.style.maxHeight = "0px";
-      }
+<!-- js for menu  -->
+<script>
+  var menuItems = document.getElementById("MenuItems");
+  menuItems.style.maxHeight = "0px";
+  function menuToggle() {
+    if (menuItems.style.maxHeight == "0px") {
+      document.getElementById("tittleHide").style.display = "none";
+      menuItems.style.maxHeight = "200px";
+    } else {
+      menuItems.style.maxHeight = "0px";
+      document.getElementById("tittleHide").style.display = "";
     }
-  </script>
+  }
+</script>
 </body>
