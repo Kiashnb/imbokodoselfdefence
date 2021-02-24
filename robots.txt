@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
 
-Sitemap: http://imbokodoselfdefence.co.za/sitemap_location.xml
+Sitemap: http://imbokodoselfdefence.co.za/sitemap.xml
 
