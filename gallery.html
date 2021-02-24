@@ -10,26 +10,26 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-  <!-- header  -->
-  <div class="header">
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html"><img src="img/logo/logo.jpg" alt="logo" width="125px"></a>
-        </div>
-        <nav>
-          <ul id="MenuItems">
+	<!-- header  -->
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo/logo.jpg" alt="logo" width="125px"></a>
+				</div>
+				<nav>
+					<ul id="MenuItems">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="programme.html">Programme</a></li>
 						<li><a href="funding.html">Funding</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <img src="img/menu.png" class="menu-icon" onclick="menuToggle()" alt="">
-      </div>
-    </div>
-  </div>
+					</ul>
+				</nav>
+				<img src="img/menu.png" class="menu-icon" onclick="menuToggle()" alt="">
+			</div>
+		</div>
+	</div>
 
 	<!-- Gallery -->
 	<div class="small-container">
@@ -58,7 +58,8 @@
 			</div>
 			<div class="col-4">
 				<img src="img/img8.JPG" alt="">
-			</div><div class="col-4">
+			</div>
+			<div class="col-4">
 				<img src="img/img9.JPG" alt="">
 			</div>
 			<div class="col-4">
@@ -90,15 +91,15 @@
 			</div>
 			<div class="col-4"></div>
 			<div class="col-4"></div>
-			</div>
 		</div>
 	</div>
+	</div>
 
-  <!-- footer  -->
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <!-- <div class="footer-col-1">
+	<!-- footer  -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- <div class="footer-col-1">
 					<h3>Download our app</h3>
 					<p>Download our Android or IOS app</p>
 					<div class="app-logo">
@@ -106,11 +107,11 @@
 						<img src="img/apple.png" class="">
 					</div>
 				</div> -->
-        <div class="footer-col-2">
-          <img src="img/logo/logo.jpg" alt="">
-          <p>Reg: 2020/802836/07</p>
-        </div>
-        <!-- <div class="footer-col-3">
+				<div class="footer-col-2">
+					<img src="img/logo/logo.jpg" alt="">
+					<p>Reg: 2020/802836/07</p>
+				</div>
+				<!-- <div class="footer-col-3">
 					<h3>Usefull links</h3>
 					<ul>
 						<li>Returns</li>
@@ -122,7 +123,7 @@
 						</a>
 					</ul>
 				</div> -->
-        <!-- <div class="footer-col-4">
+				<!-- <div class="footer-col-4">
 					<h3>Follow Us At</h3>
 					<ul>
 						<a href="http://www.facebook.com/">
@@ -133,9 +134,9 @@
 						</a>
 					</ul>
 				</div> -->
-      </div>
-    </div>
-  </div>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- js for menu  -->
@@ -152,4 +153,31 @@
 			}
 		}
 	</script>
+
+	<!-- firebase analytics configuration --------------------------------------------------------------- -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyC8umgx90FNp3ayTojak5C-Oazyv-E-RKU",
+			authDomain: "imbokodoselfdefence.firebaseapp.com",
+			projectId: "imbokodoselfdefence",
+			storageBucket: "imbokodoselfdefence.appspot.com",
+			messagingSenderId: "686208989859",
+			appId: "1:686208989859:web:67bde4117b37f35307dd16",
+			measurementId: "G-Z562W1TE5P"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+	<!-- end of firebase analytics configuration --------------------------------------------------------- -->
 </body>
+</html>

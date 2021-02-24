@@ -20,10 +20,10 @@
         <nav>
           <ul id="MenuItems">
             <li><a href="index.html">Home</a></li>
-						<li><a href="programme.html">Programme</a></li>
-						<li><a href="funding.html">Funding</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="contact.html">Contact</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="funding.html">Funding</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <img src="img/menu.png" class="menu-icon" onclick="menuToggle()" alt="">
@@ -37,7 +37,7 @@
     <h2 class="title" id="tittleHide">Funding</h2>
     <p>This being a nonprofit organisation, all proceeds received from classes are used to host the same classes in
       disadvantaged areas. Any donations are also welcomed to help us achieve our goal. <br><br>
-      Our banking details are: 
+      Our banking details are:
       <br><br>
       <b>Bank: </b> Rand Merchant Bank <br>
       <b>Account Name: </b> Imbokodo Self Defence NPC <br>
@@ -93,18 +93,45 @@
   </div>
 
 
-<!-- js for menu  -->
-<script>
-  var menuItems = document.getElementById("MenuItems");
-  menuItems.style.maxHeight = "0px";
-  function menuToggle() {
-    if (menuItems.style.maxHeight == "0px") {
-      document.getElementById("tittleHide").style.display = "none";
-      menuItems.style.maxHeight = "200px";
-    } else {
-      menuItems.style.maxHeight = "0px";
-      document.getElementById("tittleHide").style.display = "";
+  <!-- js for menu  -->
+  <script>
+    var menuItems = document.getElementById("MenuItems");
+    menuItems.style.maxHeight = "0px";
+    function menuToggle() {
+      if (menuItems.style.maxHeight == "0px") {
+        document.getElementById("tittleHide").style.display = "none";
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+        document.getElementById("tittleHide").style.display = "";
+      }
     }
-  }
-</script>
+  </script>
+
+  <!-- firebase analytics configuration --------------------------------------------------------------- -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyC8umgx90FNp3ayTojak5C-Oazyv-E-RKU",
+      authDomain: "imbokodoselfdefence.firebaseapp.com",
+      projectId: "imbokodoselfdefence",
+      storageBucket: "imbokodoselfdefence.appspot.com",
+      messagingSenderId: "686208989859",
+      appId: "1:686208989859:web:67bde4117b37f35307dd16",
+      measurementId: "G-Z562W1TE5P"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!-- end of firebase analytics configuration --------------------------------------------------------- -->
 </body>
+</html>
